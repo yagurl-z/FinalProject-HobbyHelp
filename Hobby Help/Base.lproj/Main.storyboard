@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -60,12 +60,12 @@
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DnP-hp-I9k">
                                                 <rect key="frame" x="0.0" y="0.0" width="414" height="1461"/>
-                                                <mutableString key="text">Dragon 2 is a class of reusable spacecraft developed and manufactured by American aerospace manufacturer SpaceX as the successor to the Dragon 1 cargo spacecraft. It has two variants; Crew Dragon, a human-rated capsule capable of ferrying up to seven astronauts, and Cargo Dragon, an updated replacement for the original Dragon spacecraft. The spacecraft launches atop a Falcon 9 Block 5 rocket and returns to Earth via an ocean splashdown. Unlike its predecessor, the spacecraft can dock itself to the ISS instead of being berthed. Crew Dragon is equipped with an integrated launch escape system (LES) capable of accelerating the vehicle away from the rocket in an emergency at 11.8 m/s2, accomplished by using a set of four side-mounted thruster pods with two SuperDraco engines each. The spacecraft features redesigned solar arrays and a modified outer mold line compared to the original Dragon, and possess new flight computers and avionics. As of March 2020, four Dragon 2 spacecraft have been manufactured (not counting structural test articles that were never airborne); a test article named Dragonfly and three flightworthy vehicles, one of which was destroyed in an engine test.
+                                                <string key="text">Dragon 2 is a class of reusable spacecraft developed and manufactured by American aerospace manufacturer SpaceX as the successor to the Dragon 1 cargo spacecraft. It has two variants; Crew Dragon, a human-rated capsule capable of ferrying up to seven astronauts, and Cargo Dragon, an updated replacement for the original Dragon spacecraft. The spacecraft launches atop a Falcon 9 Block 5 rocket and returns to Earth via an ocean splashdown. Unlike its predecessor, the spacecraft can dock itself to the ISS instead of being berthed. Crew Dragon is equipped with an integrated launch escape system (LES) capable of accelerating the vehicle away from the rocket in an emergency at 11.8 m/s2, accomplished by using a set of four side-mounted thruster pods with two SuperDraco engines each. The spacecraft features redesigned solar arrays and a modified outer mold line compared to the original Dragon, and possess new flight computers and avionics. As of March 2020, four Dragon 2 spacecraft have been manufactured (not counting structural test articles that were never airborne); a test article named Dragonfly and three flightworthy vehicles, one of which was destroyed in an engine test.
 
 Crew Dragon serves as one of two spacecraft that is expected to shuttle crews to and from the International Space Station (ISS) under NASA's Commercial Crew Program, the other being the Boeing CST-100 Starliner. It is also expected to be used in flights by American space tourism company Space Adventures and to shuttle tourists to and from Axiom Space's planned space station. Crew Dragon's first non-piloted test flight occurred in March 2019, and its first crewed flight – with astronauts Robert L. Behnken and Douglas G. Hurley – occurred 30 May 2020 at 3:22PM ET. This test flight marked the first time a private company has launched a crewed orbital spacecraft. Cargo Dragon is expected to supply cargo to the ISS under a Commercial Resupply Services-2 contract with NASA, along with Northrop Grumman Innovation Systems' Cygnus spacecraft and Sierra Nevada Corporation's Dream Chaser spacecraft. The first flight of the Dragon 2 variant of Cargo Dragon is planned to launch in October 2020. There are two variants: Crew Dragon and Cargo Dragon.[5] Crew Dragon was initially called DragonRider[11][12] and it was intended from the beginning to support a crew of seven or a combination of crew and cargo.[13][14] It is able to perform fully autonomous rendezvous and docking with manual override ability using the NASA Docking System (NDS).[15][16] For typical missions, Crew Dragon will remain docked to the ISS for a period of 180 days, but is designed to remain on the station for up to 210 days, matching the Russian Soyuz spacecraft.[17][18][19] From the beginning of the development process, SpaceX planned to use an integrated pusher launch escape system for the Dragon spacecraft.[20][21][22]
 
 Crew Dragon
-SpaceX originally intended to land Crew Dragon on land using the LES engines, with parachutes and an ocean splashdown available in the case of an aborted launch. Precision water landing under parachutes was proposed to NASA as "the baseline return and recovery approach for the first few flights" of Crew Dragon.[23] Propulsive landing was later cancelled, leaving ocean splashdown under parachutes as the only option.[24] As of 2011, the Paragon Space Development Corporation was assisting in developing Crew Dragon's life support system.[25]</mutableString>
+SpaceX originally intended to land Crew Dragon on land using the LES engines, with parachutes and an ocean splashdown available in the case of an aborted launch. Precision water landing under parachutes was proposed to NASA as "the baseline return and recovery approach for the first few flights" of Crew Dragon.[23] Propulsive landing was later cancelled, leaving ocean splashdown under parachutes as the only option.[24] As of 2011, the Paragon Space Development Corporation was assisting in developing Crew Dragon's life support system.[25]</string>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -99,8 +99,263 @@ SpaceX originally intended to land Crew Dragon on land using the LES engines, wi
             </objects>
             <point key="canvasLocation" x="818.84057971014499" y="114.50892857142857"/>
         </scene>
+        <!--Account Page-->
+        <scene sceneID="HGu-pA-Nup">
+            <objects>
+                <viewController title="Account Page" id="ric-7f-3wZ" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="rP8-vU-GK8">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="download" translatesAutoresizingMaskIntoConstraints="NO" id="C7P-Sg-ZaV">
+                                <rect key="frame" x="94.5" y="92" width="225" height="200"/>
+                            </imageView>
+                            <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Name" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="I3k-Jf-Fht">
+                                <rect key="frame" x="100" y="339" width="214" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField autoresizesSubviews="NO" opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Bio, Location, Username, etc." textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fXD-F0-OsK">
+                                <rect key="frame" x="30" y="431" width="354" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Personal Info (this will not be shared out)" textAlignment="center" adjustsFontSizeToFit="NO" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LGk-fu-8Ru">
+                                <rect key="frame" x="30" y="526" width="354" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="LGk-fu-8Ru" firstAttribute="leading" secondItem="BaX-eV-A8f" secondAttribute="leading" constant="30" id="Bmf-IO-NnZ"/>
+                            <constraint firstItem="C7P-Sg-ZaV" firstAttribute="centerX" secondItem="rP8-vU-GK8" secondAttribute="centerX" id="Fdl-nr-TMD"/>
+                            <constraint firstItem="I3k-Jf-Fht" firstAttribute="leading" secondItem="BaX-eV-A8f" secondAttribute="leading" constant="100" id="Nyp-JG-dwg"/>
+                            <constraint firstItem="LGk-fu-8Ru" firstAttribute="top" secondItem="fXD-F0-OsK" secondAttribute="bottom" constant="61" id="VRy-um-zgQ"/>
+                            <constraint firstItem="fXD-F0-OsK" firstAttribute="top" secondItem="I3k-Jf-Fht" secondAttribute="bottom" constant="58" id="a6j-iu-dTg"/>
+                            <constraint firstItem="fXD-F0-OsK" firstAttribute="leading" secondItem="BaX-eV-A8f" secondAttribute="leading" constant="30" id="ec1-XH-ySH"/>
+                            <constraint firstItem="BaX-eV-A8f" firstAttribute="trailing" secondItem="LGk-fu-8Ru" secondAttribute="trailing" constant="30" id="gP4-my-Kcz"/>
+                            <constraint firstItem="BaX-eV-A8f" firstAttribute="trailing" secondItem="fXD-F0-OsK" secondAttribute="trailing" constant="30" id="uva-FF-51C"/>
+                            <constraint firstItem="BaX-eV-A8f" firstAttribute="trailing" secondItem="I3k-Jf-Fht" secondAttribute="trailing" constant="100" id="x0T-Ys-y3U"/>
+                            <constraint firstItem="I3k-Jf-Fht" firstAttribute="top" secondItem="C7P-Sg-ZaV" secondAttribute="bottom" constant="47" id="z2w-Q7-jjH"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="BaX-eV-A8f"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1fg-Sc-GVc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1493" y="115"/>
+        </scene>
+        <!--Videos/Tutorials/Classes-->
+        <scene sceneID="7Yb-Gw-6f8">
+            <objects>
+                <viewController title="Videos/Tutorials/Classes" id="cAd-MB-wLo" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ara-Gp-XRZ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="prF-p6-rcA">
+                                <rect key="frame" x="10" y="117" width="272" height="159"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xFk-c5-wUh">
+                                <rect key="frame" x="20" y="369" width="262" height="159"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="14" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="18E-ZY-4vF">
+                                <rect key="frame" x="290" y="369" width="104" height="212"/>
+                                <color key="backgroundColor" red="0.99215686270000003" green="0.79215686269999996" blue="0.25098039220000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="14" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hi0-l4-nqt">
+                                <rect key="frame" x="290" y="616" width="104" height="212"/>
+                                <color key="backgroundColor" red="0.99215686270000003" green="0.79215686269999996" blue="0.25098039220000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Comment Section" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bOT-6z-nat">
+                                <rect key="frame" x="20" y="794" width="262" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Comment Section" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="D37-sl-jnJ">
+                                <rect key="frame" x="10" y="295" width="272" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cGV-cB-mb4">
+                                <rect key="frame" x="20" y="616" width="262" height="159"/>
+                            </imageView>
+                            <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Comment Section" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sxQ-OU-T0s">
+                                <rect key="frame" x="20" y="547" width="262" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="14" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sCd-vg-tRn">
+                                <rect key="frame" x="290" y="117" width="104" height="212"/>
+                                <color key="backgroundColor" red="0.99215686270000003" green="0.79215686269999996" blue="0.25098039220000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="bOT-6z-nat" firstAttribute="top" secondItem="cGV-cB-mb4" secondAttribute="bottom" constant="19" id="3RZ-Bq-eQk"/>
+                            <constraint firstItem="18E-ZY-4vF" firstAttribute="leading" secondItem="xFk-c5-wUh" secondAttribute="trailing" constant="8" id="CaM-j8-BbF"/>
+                            <constraint firstItem="prF-p6-rcA" firstAttribute="leading" secondItem="Emu-XC-TJZ" secondAttribute="leading" constant="10" id="HQf-4W-Qof"/>
+                            <constraint firstItem="sCd-vg-tRn" firstAttribute="leading" secondItem="prF-p6-rcA" secondAttribute="trailing" constant="8" id="Ngx-dT-aH9"/>
+                            <constraint firstItem="18E-ZY-4vF" firstAttribute="leading" secondItem="sxQ-OU-T0s" secondAttribute="trailing" constant="8" id="Nqq-wO-RSH"/>
+                            <constraint firstItem="D37-sl-jnJ" firstAttribute="leading" secondItem="Emu-XC-TJZ" secondAttribute="leading" constant="10" id="W6p-x3-b3g"/>
+                            <constraint firstItem="sCd-vg-tRn" firstAttribute="leading" secondItem="D37-sl-jnJ" secondAttribute="trailing" constant="8" id="WAe-XN-UbC"/>
+                            <constraint firstItem="D37-sl-jnJ" firstAttribute="top" secondItem="prF-p6-rcA" secondAttribute="bottom" constant="19" id="etd-Mk-aI9"/>
+                            <constraint firstItem="sxQ-OU-T0s" firstAttribute="top" secondItem="xFk-c5-wUh" secondAttribute="bottom" constant="19" id="qQL-kD-n2F"/>
+                            <constraint firstItem="hi0-l4-nqt" firstAttribute="leading" secondItem="bOT-6z-nat" secondAttribute="trailing" constant="8" id="rDu-w3-hIj"/>
+                            <constraint firstItem="hi0-l4-nqt" firstAttribute="leading" secondItem="cGV-cB-mb4" secondAttribute="trailing" constant="8" id="unk-YQ-yYt"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Emu-XC-TJZ"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gaQ-6D-HwI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="770.75892857142856"/>
+        </scene>
+        <!--Group Chat-->
+        <scene sceneID="mK2-0F-KYS">
+            <objects>
+                <viewController title="Group Chat" id="8L2-bE-FnL" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Xkz-eY-vgG">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Instructor Text" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D5o-3Z-wi0">
+                                <rect key="frame" x="186" y="110" width="184" height="74"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Read Other's Feedback" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="geI-9U-Zvu">
+                                <rect key="frame" x="170" y="271" width="200" height="74"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Read Other's Questions" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sdk-gU-YgC">
+                                <rect key="frame" x="170" y="411" width="200" height="74"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="download" translatesAutoresizingMaskIntoConstraints="NO" id="elf-t5-iic">
+                                <rect key="frame" x="70" y="110" width="72" height="74"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="download" translatesAutoresizingMaskIntoConstraints="NO" id="xjU-gO-B7E">
+                                <rect key="frame" x="70" y="271" width="72" height="74"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="download" translatesAutoresizingMaskIntoConstraints="NO" id="CsA-ah-tPy">
+                                <rect key="frame" x="70" y="411" width="72" height="74"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="download" translatesAutoresizingMaskIntoConstraints="NO" id="hga-xJ-puZ">
+                                <rect key="frame" x="70" y="555" width="72" height="74"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="A Group Chat For The Class You're In!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VrQ-AI-JvC">
+                                <rect key="frame" x="170" y="555" width="200" height="74"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="hab-Xe-3Af"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OMx-JC-yvt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="818.84057971014499" y="770.75892857142856"/>
+        </scene>
+        <!--Personal Chat-->
+        <scene sceneID="W3L-n7-zVV">
+            <objects>
+                <viewController title="Personal Chat" id="99a-m8-xfz" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Qy2-1m-6Q3">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="download" translatesAutoresizingMaskIntoConstraints="NO" id="RAN-Dc-xZy">
+                                <rect key="frame" x="58" y="251" width="72" height="74"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="download" translatesAutoresizingMaskIntoConstraints="NO" id="fWk-D2-VL5">
+                                <rect key="frame" x="303" y="674" width="72" height="74"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="download" translatesAutoresizingMaskIntoConstraints="NO" id="YIg-aY-2an">
+                                <rect key="frame" x="58" y="555" width="72" height="74"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="download" translatesAutoresizingMaskIntoConstraints="NO" id="00i-YR-cGA">
+                                <rect key="frame" x="303" y="107" width="72" height="74"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Start Texting Here" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="U0j-27-huh">
+                                <rect key="frame" x="54" y="694" width="193" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Have Fun" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Svn-Mw-Nie">
+                                <rect key="frame" x="172" y="555" width="184" height="74"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Make Connections" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P3x-Wx-nIV">
+                                <rect key="frame" x="54" y="411" width="184" height="74"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Have Conversations " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vdT-KI-Pk9">
+                                <rect key="frame" x="172" y="251" width="184" height="74"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="download" translatesAutoresizingMaskIntoConstraints="NO" id="cYH-1V-zfn">
+                                <rect key="frame" x="303" y="411" width="72" height="74"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Hobby Help" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cxw-fd-oFm">
+                                <rect key="frame" x="68" y="117" width="179" height="54"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="Gw8-XB-jdH"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Mo3-zr-MjO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1492.753623188406" y="770.75892857142856"/>
+        </scene>
     </scenes>
     <resources>
-        <image name="pencil.and.outline" catalog="system" width="128" height="119"/>
+        <image name="download" width="225" height="225"/>
+        <image name="pencil.and.outline" catalog="system" width="64" height="58"/>
     </resources>
 </document>
