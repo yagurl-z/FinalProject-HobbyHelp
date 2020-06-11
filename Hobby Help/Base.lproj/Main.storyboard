@@ -1,53 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
-            <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Hobby_Help" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" text="Hobby" minimumFontSize="26" translatesAutoresizingMaskIntoConstraints="NO" id="254-tP-nqj">
-                                <rect key="frame" x="32" y="227" width="222" height="81.5"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.99607843139999996" green="0.42745098040000001" blue="0.45098039220000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <rect key="contentStretch" x="1" y="0.0" width="1" height="1"/>
-                                <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="60"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="pencil.and.outline" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="bBB-Qn-5wd">
-                                <rect key="frame" x="209" y="226" width="173" height="169"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="tintColor" red="0.1333333333" green="0.48627450979999998" blue="0.61568627450000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            </imageView>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" text="Help" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ciO-U5-xn7">
-                                <rect key="frame" x="32" y="303" width="222" height="82"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.99607843137254903" green="0.42745098039215684" blue="0.45098039215686275" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="60"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                        </subviews>
-                        <color key="backgroundColor" red="1" green="0.42256277799999997" blue="0.4395337701" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="161" y="115"/>
-        </scene>
-        <!--View Controller-->
+        <!--scroll home page-->
         <scene sceneID="UXK-gG-ztA">
             <objects>
-                <viewController id="ddx-wd-Nai" sceneMemberID="viewController">
+                <viewController id="ddx-wd-Nai" userLabel="scroll home page" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="3yk-Xt-tC9">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -56,16 +19,16 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="eHB-5e-CJD">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="1461"/>
+                                        <rect key="frame" x="25" y="100" width="374" height="1643.5"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DnP-hp-I9k">
-                                                <rect key="frame" x="0.0" y="0.0" width="414" height="1461"/>
-                                                <string key="text">Dragon 2 is a class of reusable spacecraft developed and manufactured by American aerospace manufacturer SpaceX as the successor to the Dragon 1 cargo spacecraft. It has two variants; Crew Dragon, a human-rated capsule capable of ferrying up to seven astronauts, and Cargo Dragon, an updated replacement for the original Dragon spacecraft. The spacecraft launches atop a Falcon 9 Block 5 rocket and returns to Earth via an ocean splashdown. Unlike its predecessor, the spacecraft can dock itself to the ISS instead of being berthed. Crew Dragon is equipped with an integrated launch escape system (LES) capable of accelerating the vehicle away from the rocket in an emergency at 11.8 m/s2, accomplished by using a set of four side-mounted thruster pods with two SuperDraco engines each. The spacecraft features redesigned solar arrays and a modified outer mold line compared to the original Dragon, and possess new flight computers and avionics. As of March 2020, four Dragon 2 spacecraft have been manufactured (not counting structural test articles that were never airborne); a test article named Dragonfly and three flightworthy vehicles, one of which was destroyed in an engine test.
+                                                <rect key="frame" x="0.0" y="0.0" width="374" height="1643.5"/>
+                                                <mutableString key="text">Dragon 2 is a class of reusable spacecraft developed and manufactured by American aerospace manufacturer SpaceX as the successor to the Dragon 1 cargo spacecraft. It has two variants; Crew Dragon, a human-rated capsule capable of ferrying up to seven astronauts, and Cargo Dragon, an updated replacement for the original Dragon spacecraft. The spacecraft launches atop a Falcon 9 Block 5 rocket and returns to Earth via an ocean splashdown. Unlike its predecessor, the spacecraft can dock itself to the ISS instead of being berthed. Crew Dragon is equipped with an integrated launch escape system (LES) capable of accelerating the vehicle away from the rocket in an emergency at 11.8 m/s2, accomplished by using a set of four side-mounted thruster pods with two SuperDraco engines each. The spacecraft features redesigned solar arrays and a modified outer mold line compared to the original Dragon, and possess new flight computers and avionics. As of March 2020, four Dragon 2 spacecraft have been manufactured (not counting structural test articles that were never airborne); a test article named Dragonfly and three flightworthy vehicles, one of which was destroyed in an engine test.
 
 Crew Dragon serves as one of two spacecraft that is expected to shuttle crews to and from the International Space Station (ISS) under NASA's Commercial Crew Program, the other being the Boeing CST-100 Starliner. It is also expected to be used in flights by American space tourism company Space Adventures and to shuttle tourists to and from Axiom Space's planned space station. Crew Dragon's first non-piloted test flight occurred in March 2019, and its first crewed flight – with astronauts Robert L. Behnken and Douglas G. Hurley – occurred 30 May 2020 at 3:22PM ET. This test flight marked the first time a private company has launched a crewed orbital spacecraft. Cargo Dragon is expected to supply cargo to the ISS under a Commercial Resupply Services-2 contract with NASA, along with Northrop Grumman Innovation Systems' Cygnus spacecraft and Sierra Nevada Corporation's Dream Chaser spacecraft. The first flight of the Dragon 2 variant of Cargo Dragon is planned to launch in October 2020. There are two variants: Crew Dragon and Cargo Dragon.[5] Crew Dragon was initially called DragonRider[11][12] and it was intended from the beginning to support a crew of seven or a combination of crew and cargo.[13][14] It is able to perform fully autonomous rendezvous and docking with manual override ability using the NASA Docking System (NDS).[15][16] For typical missions, Crew Dragon will remain docked to the ISS for a period of 180 days, but is designed to remain on the station for up to 210 days, matching the Russian Soyuz spacecraft.[17][18][19] From the beginning of the development process, SpaceX planned to use an integrated pusher launch escape system for the Dragon spacecraft.[20][21][22]
 
 Crew Dragon
-SpaceX originally intended to land Crew Dragon on land using the LES engines, with parachutes and an ocean splashdown available in the case of an aborted launch. Precision water landing under parachutes was proposed to NASA as "the baseline return and recovery approach for the first few flights" of Crew Dragon.[23] Propulsive landing was later cancelled, leaving ocean splashdown under parachutes as the only option.[24] As of 2011, the Paragon Space Development Corporation was assisting in developing Crew Dragon's life support system.[25]</string>
+SpaceX originally intended to land Crew Dragon on land using the LES engines, with parachutes and an ocean splashdown available in the case of an aborted launch. Precision water landing under parachutes was proposed to NASA as "the baseline return and recovery approach for the first few flights" of Crew Dragon.[23] Propulsive landing was later cancelled, leaving ocean splashdown under parachutes as the only option.[24] As of 2011, the Paragon Space Development Corporation was assisting in developing Crew Dragon's life support system.[25]</mutableString>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -74,11 +37,11 @@ SpaceX originally intended to land Crew Dragon on land using the LES engines, wi
                                     </stackView>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstItem="eHB-5e-CJD" firstAttribute="leading" secondItem="rfQ-Ky-zr5" secondAttribute="leading" id="8PG-GY-mGb"/>
-                                    <constraint firstItem="eHB-5e-CJD" firstAttribute="width" secondItem="6Ld-yJ-V3f" secondAttribute="width" id="IDN-6n-3j9"/>
-                                    <constraint firstItem="eHB-5e-CJD" firstAttribute="top" secondItem="rfQ-Ky-zr5" secondAttribute="top" id="UnH-S9-ZmF"/>
+                                    <constraint firstItem="eHB-5e-CJD" firstAttribute="leading" secondItem="rfQ-Ky-zr5" secondAttribute="leading" constant="25" id="8PG-GY-mGb"/>
+                                    <constraint firstItem="eHB-5e-CJD" firstAttribute="width" secondItem="6Ld-yJ-V3f" secondAttribute="width" constant="-40" id="IDN-6n-3j9"/>
+                                    <constraint firstItem="eHB-5e-CJD" firstAttribute="top" secondItem="rfQ-Ky-zr5" secondAttribute="top" constant="100" id="UnH-S9-ZmF"/>
                                     <constraint firstItem="eHB-5e-CJD" firstAttribute="bottom" secondItem="rfQ-Ky-zr5" secondAttribute="bottom" id="XJ7-BI-FxB"/>
-                                    <constraint firstItem="eHB-5e-CJD" firstAttribute="trailing" secondItem="rfQ-Ky-zr5" secondAttribute="trailing" id="j4Z-co-HLQ"/>
+                                    <constraint firstItem="eHB-5e-CJD" firstAttribute="trailing" secondItem="rfQ-Ky-zr5" secondAttribute="trailing" constant="-30" id="j4Z-co-HLQ"/>
                                 </constraints>
                                 <viewLayoutGuide key="contentLayoutGuide" id="rfQ-Ky-zr5"/>
                                 <viewLayoutGuide key="frameLayoutGuide" id="6Ld-yJ-V3f"/>
@@ -356,6 +319,5 @@ SpaceX originally intended to land Crew Dragon on land using the LES engines, wi
     </scenes>
     <resources>
         <image name="download" width="225" height="225"/>
-        <image name="pencil.and.outline" catalog="system" width="64" height="58"/>
     </resources>
 </document>
