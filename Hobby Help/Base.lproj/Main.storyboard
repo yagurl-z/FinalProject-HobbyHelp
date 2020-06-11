@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="But-pT-bmr">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
@@ -7,14 +7,15 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Tutorials-->
+        <!--tab bar controller-->
         <scene sceneID="dE4-Su-abJ">
             <objects>
-                <tabBarController title="Tutorials" id="But-pT-bmr" sceneMemberID="viewController">
+                <tabBarController title="tab bar controller" id="But-pT-bmr" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Oo8-FN-RCf">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="selectedImageTintColor" red="1" green="0.42256277799999997" blue="0.4395337701" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </tabBar>
                     <connections>
                         <segue destination="ddx-wd-Nai" kind="relationship" relationship="viewControllers" id="S0L-wO-xtY"/>
@@ -31,7 +32,7 @@
         <!--scroll home page-->
         <scene sceneID="UXK-gG-ztA">
             <objects>
-                <viewController id="ddx-wd-Nai" userLabel="scroll home page" sceneMemberID="viewController">
+                <viewController title="home page" id="ddx-wd-Nai" userLabel="scroll home page" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="3yk-Xt-tC9">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -39,30 +40,56 @@
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yCp-J5-b1m">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="eHB-5e-CJD">
-                                        <rect key="frame" x="25" y="100" width="374" height="1643.5"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="eHB-5e-CJD">
+                                        <rect key="frame" x="0.0" y="35" width="414" height="821.5"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DnP-hp-I9k">
-                                                <rect key="frame" x="0.0" y="0.0" width="374" height="1643.5"/>
-                                                <mutableString key="text">Dragon 2 is a class of reusable spacecraft developed and manufactured by American aerospace manufacturer SpaceX as the successor to the Dragon 1 cargo spacecraft. It has two variants; Crew Dragon, a human-rated capsule capable of ferrying up to seven astronauts, and Cargo Dragon, an updated replacement for the original Dragon spacecraft. The spacecraft launches atop a Falcon 9 Block 5 rocket and returns to Earth via an ocean splashdown. Unlike its predecessor, the spacecraft can dock itself to the ISS instead of being berthed. Crew Dragon is equipped with an integrated launch escape system (LES) capable of accelerating the vehicle away from the rocket in an emergency at 11.8 m/s2, accomplished by using a set of four side-mounted thruster pods with two SuperDraco engines each. The spacecraft features redesigned solar arrays and a modified outer mold line compared to the original Dragon, and possess new flight computers and avionics. As of March 2020, four Dragon 2 spacecraft have been manufactured (not counting structural test articles that were never airborne); a test article named Dragonfly and three flightworthy vehicles, one of which was destroyed in an engine test.
-
-Crew Dragon serves as one of two spacecraft that is expected to shuttle crews to and from the International Space Station (ISS) under NASA's Commercial Crew Program, the other being the Boeing CST-100 Starliner. It is also expected to be used in flights by American space tourism company Space Adventures and to shuttle tourists to and from Axiom Space's planned space station. Crew Dragon's first non-piloted test flight occurred in March 2019, and its first crewed flight – with astronauts Robert L. Behnken and Douglas G. Hurley – occurred 30 May 2020 at 3:22PM ET. This test flight marked the first time a private company has launched a crewed orbital spacecraft. Cargo Dragon is expected to supply cargo to the ISS under a Commercial Resupply Services-2 contract with NASA, along with Northrop Grumman Innovation Systems' Cygnus spacecraft and Sierra Nevada Corporation's Dream Chaser spacecraft. The first flight of the Dragon 2 variant of Cargo Dragon is planned to launch in October 2020. There are two variants: Crew Dragon and Cargo Dragon.[5] Crew Dragon was initially called DragonRider[11][12] and it was intended from the beginning to support a crew of seven or a combination of crew and cargo.[13][14] It is able to perform fully autonomous rendezvous and docking with manual override ability using the NASA Docking System (NDS).[15][16] For typical missions, Crew Dragon will remain docked to the ISS for a period of 180 days, but is designed to remain on the station for up to 210 days, matching the Russian Soyuz spacecraft.[17][18][19] From the beginning of the development process, SpaceX planned to use an integrated pusher launch escape system for the Dragon spacecraft.[20][21][22]
-
-Crew Dragon
-SpaceX originally intended to land Crew Dragon on land using the LES engines, with parachutes and an ocean splashdown available in the case of an aborted launch. Precision water landing under parachutes was proposed to NASA as "the baseline return and recovery approach for the first few flights" of Crew Dragon.[23] Propulsive landing was later cancelled, leaving ocean splashdown under parachutes as the only option.[24] As of 2011, the Paragon Space Development Corporation was assisting in developing Crew Dragon's life support system.[25]</mutableString>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello!, welcome to Hobby Help!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DnP-hp-I9k">
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="78"/>
+                                                <color key="backgroundColor" red="1" green="0.79822754539999996" blue="0.0074770109010000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="30"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="leatherwork" translatesAutoresizingMaskIntoConstraints="NO" id="9ZI-R2-byT">
+                                                <rect key="frame" x="0.0" y="128" width="414" height="128"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="128" id="YRk-3M-OwR"/>
+                                                </constraints>
+                                            </imageView>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Leatherworking by Meghan Andrews" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DR5-es-NFd">
+                                                <rect key="frame" x="0.0" y="306" width="414" height="34"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="felting" translatesAutoresizingMaskIntoConstraints="NO" id="FXl-OU-xxJ">
+                                                <rect key="frame" x="0.0" y="390" width="414" height="128"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="128" id="PyO-LU-l2n"/>
+                                                </constraints>
+                                            </imageView>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Felting by Bryan Goldberg" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GL4-Im-5m7">
+                                                <rect key="frame" x="0.0" y="568" width="414" height="34"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="embroirdery" translatesAutoresizingMaskIntoConstraints="NO" id="WL1-PZ-ruE">
+                                                <rect key="frame" x="0.0" y="652" width="414" height="93"/>
+                                            </imageView>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Embroidery by Timothy Johnson" borderStyle="line" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tIV-TD-rzg">
+                                                <rect key="frame" x="0.0" y="795" width="414" height="26.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
                                         </subviews>
                                     </stackView>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstItem="eHB-5e-CJD" firstAttribute="leading" secondItem="rfQ-Ky-zr5" secondAttribute="leading" constant="25" id="8PG-GY-mGb"/>
-                                    <constraint firstItem="eHB-5e-CJD" firstAttribute="width" secondItem="6Ld-yJ-V3f" secondAttribute="width" constant="-40" id="IDN-6n-3j9"/>
-                                    <constraint firstItem="eHB-5e-CJD" firstAttribute="top" secondItem="rfQ-Ky-zr5" secondAttribute="top" constant="100" id="UnH-S9-ZmF"/>
-                                    <constraint firstItem="eHB-5e-CJD" firstAttribute="bottom" secondItem="rfQ-Ky-zr5" secondAttribute="bottom" id="XJ7-BI-FxB"/>
-                                    <constraint firstItem="eHB-5e-CJD" firstAttribute="trailing" secondItem="rfQ-Ky-zr5" secondAttribute="trailing" constant="-30" id="j4Z-co-HLQ"/>
+                                    <constraint firstItem="eHB-5e-CJD" firstAttribute="bottom" secondItem="rfQ-Ky-zr5" secondAttribute="bottom" id="1ie-Bc-uGS"/>
+                                    <constraint firstItem="eHB-5e-CJD" firstAttribute="leading" secondItem="rfQ-Ky-zr5" secondAttribute="leading" id="JwE-9Z-iFn"/>
+                                    <constraint firstItem="6Ld-yJ-V3f" firstAttribute="bottom" secondItem="eHB-5e-CJD" secondAttribute="bottom" constant="39.5" id="WH8-Lx-Q3f"/>
+                                    <constraint firstItem="eHB-5e-CJD" firstAttribute="top" secondItem="rfQ-Ky-zr5" secondAttribute="top" constant="35" id="k44-iC-brl"/>
+                                    <constraint firstItem="eHB-5e-CJD" firstAttribute="trailing" secondItem="rfQ-Ky-zr5" secondAttribute="trailing" id="nwW-yM-xyP"/>
+                                    <constraint firstItem="eHB-5e-CJD" firstAttribute="width" secondItem="6Ld-yJ-V3f" secondAttribute="width" id="yqZ-FP-db8"/>
                                 </constraints>
                                 <viewLayoutGuide key="contentLayoutGuide" id="rfQ-Ky-zr5"/>
                                 <viewLayoutGuide key="frameLayoutGuide" id="6Ld-yJ-V3f"/>
@@ -91,20 +118,23 @@ SpaceX originally intended to land Crew Dragon on land using the LES engines, wi
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="download" translatesAutoresizingMaskIntoConstraints="NO" id="C7P-Sg-ZaV">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="download" translatesAutoresizingMaskIntoConstraints="NO" id="C7P-Sg-ZaV">
                                 <rect key="frame" x="94.5" y="92" width="225" height="200"/>
                             </imageView>
-                            <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Name" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="I3k-Jf-Fht">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Name" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="I3k-Jf-Fht">
                                 <rect key="frame" x="100" y="339" width="214" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="pSe-cM-aTi"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField autoresizesSubviews="NO" opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Bio, Location, Username, etc." textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fXD-F0-OsK">
+                            <textField autoresizesSubviews="NO" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Bio, Location, Username, etc." textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fXD-F0-OsK">
                                 <rect key="frame" x="30" y="431" width="354" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Personal Info (this will not be shared out)" textAlignment="center" adjustsFontSizeToFit="NO" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LGk-fu-8Ru">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Personal Info (this will not be shared out)" textAlignment="center" adjustsFontSizeToFit="NO" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LGk-fu-8Ru">
                                 <rect key="frame" x="30" y="526" width="354" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -114,9 +144,11 @@ SpaceX originally intended to land Crew Dragon on land using the LES engines, wi
                         <constraints>
                             <constraint firstItem="LGk-fu-8Ru" firstAttribute="leading" secondItem="BaX-eV-A8f" secondAttribute="leading" constant="30" id="Bmf-IO-NnZ"/>
                             <constraint firstItem="C7P-Sg-ZaV" firstAttribute="centerX" secondItem="rP8-vU-GK8" secondAttribute="centerX" id="Fdl-nr-TMD"/>
+                            <constraint firstItem="C7P-Sg-ZaV" firstAttribute="top" secondItem="BaX-eV-A8f" secondAttribute="top" constant="48" id="MAU-pp-63o"/>
                             <constraint firstItem="I3k-Jf-Fht" firstAttribute="leading" secondItem="BaX-eV-A8f" secondAttribute="leading" constant="100" id="Nyp-JG-dwg"/>
                             <constraint firstItem="LGk-fu-8Ru" firstAttribute="top" secondItem="fXD-F0-OsK" secondAttribute="bottom" constant="61" id="VRy-um-zgQ"/>
                             <constraint firstItem="fXD-F0-OsK" firstAttribute="top" secondItem="I3k-Jf-Fht" secondAttribute="bottom" constant="58" id="a6j-iu-dTg"/>
+                            <constraint firstItem="fXD-F0-OsK" firstAttribute="centerY" secondItem="rP8-vU-GK8" secondAttribute="centerY" id="bnz-Gi-dUY"/>
                             <constraint firstItem="fXD-F0-OsK" firstAttribute="leading" secondItem="BaX-eV-A8f" secondAttribute="leading" constant="30" id="ec1-XH-ySH"/>
                             <constraint firstItem="BaX-eV-A8f" firstAttribute="trailing" secondItem="LGk-fu-8Ru" secondAttribute="trailing" constant="30" id="gP4-my-Kcz"/>
                             <constraint firstItem="BaX-eV-A8f" firstAttribute="trailing" secondItem="fXD-F0-OsK" secondAttribute="trailing" constant="30" id="uva-FF-51C"/>
@@ -125,7 +157,7 @@ SpaceX originally intended to land Crew Dragon on land using the LES engines, wi
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="BaX-eV-A8f"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Account" image="person.fill" catalog="system" selectedImage="person.fill" id="RHg-ob-RvR"/>
+                    <tabBarItem key="tabBarItem" title="Account" image="person.circle" catalog="system" selectedImage="person.circle" id="RHg-ob-RvR"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1fg-Sc-GVc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -139,73 +171,87 @@ SpaceX originally intended to land Crew Dragon on land using the LES engines, wi
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="prF-p6-rcA">
-                                <rect key="frame" x="10" y="117" width="272" height="159"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="knitting" translatesAutoresizingMaskIntoConstraints="NO" id="prF-p6-rcA">
+                                <rect key="frame" x="0.0" y="117" width="252" height="159"/>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xFk-c5-wUh">
-                                <rect key="frame" x="20" y="369" width="262" height="159"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="crochet" translatesAutoresizingMaskIntoConstraints="NO" id="xFk-c5-wUh">
+                                <rect key="frame" x="20" y="369" width="236" height="159"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Crotchet" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="14" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="18E-ZY-4vF">
-                                <rect key="frame" x="290" y="369" width="104" height="212"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Crotchet" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="14" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="18E-ZY-4vF">
+                                <rect key="frame" x="264" y="369" width="157" height="159"/>
                                 <color key="backgroundColor" red="0.99215686270000003" green="0.79215686269999996" blue="0.25098039220000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Cooking" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="14" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hi0-l4-nqt">
-                                <rect key="frame" x="290" y="616" width="104" height="212"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Cooking" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="14" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hi0-l4-nqt">
+                                <rect key="frame" x="264" y="616" width="157" height="159"/>
                                 <color key="backgroundColor" red="0.99215686270000003" green="0.79215686269999996" blue="0.25098039220000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Comment Section" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bOT-6z-nat">
-                                <rect key="frame" x="20" y="794" width="262" height="34"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Comment Section" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bOT-6z-nat">
+                                <rect key="frame" x="98" y="794" width="158" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Comment Section" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="D37-sl-jnJ">
-                                <rect key="frame" x="10" y="295" width="272" height="34"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cGV-cB-mb4">
-                                <rect key="frame" x="20" y="616" width="262" height="159"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cooking" translatesAutoresizingMaskIntoConstraints="NO" id="cGV-cB-mb4">
+                                <rect key="frame" x="20" y="616" width="236" height="159"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="159" id="q2w-eo-9rV"/>
+                                </constraints>
                             </imageView>
-                            <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Comment Section" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sxQ-OU-T0s">
-                                <rect key="frame" x="20" y="547" width="262" height="34"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Comment Section" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sxQ-OU-T0s">
+                                <rect key="frame" x="98" y="547" width="158" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Beginner" textAlignment="center" lineBreakMode="clip" numberOfLines="14" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sCd-vg-tRn">
-                                <rect key="frame" x="264" y="117" width="157" height="212"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Beginner Knitting" textAlignment="center" lineBreakMode="clip" numberOfLines="14" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sCd-vg-tRn">
+                                <rect key="frame" x="257" y="117" width="157" height="154"/>
                                 <color key="backgroundColor" red="0.99215686270000003" green="0.79215686269999996" blue="0.25098039220000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="212" id="55W-8M-Wg4"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Knitting" textAlignment="center" lineBreakMode="clip" numberOfLines="14" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UWS-SH-53S">
-                                <rect key="frame" x="277" y="232" width="130" height="91"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.99215686270000003" green="0.79215686269999996" blue="0.25098039220000001" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Comment Section" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="D37-sl-jnJ">
+                                <rect key="frame" x="2" y="284" width="254" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
+                            <constraint firstItem="cGV-cB-mb4" firstAttribute="trailing" secondItem="xFk-c5-wUh" secondAttribute="trailing" id="3Ch-jr-oSi"/>
                             <constraint firstItem="bOT-6z-nat" firstAttribute="top" secondItem="cGV-cB-mb4" secondAttribute="bottom" constant="19" id="3RZ-Bq-eQk"/>
+                            <constraint firstItem="sCd-vg-tRn" firstAttribute="top" secondItem="prF-p6-rcA" secondAttribute="top" id="7BW-BA-5EX"/>
                             <constraint firstItem="18E-ZY-4vF" firstAttribute="leading" secondItem="xFk-c5-wUh" secondAttribute="trailing" constant="8" id="CaM-j8-BbF"/>
+                            <constraint firstItem="cGV-cB-mb4" firstAttribute="leading" secondItem="Ara-Gp-XRZ" secondAttribute="leadingMargin" id="Ewa-vv-Cqg"/>
+                            <constraint firstItem="cGV-cB-mb4" firstAttribute="leading" secondItem="xFk-c5-wUh" secondAttribute="leading" id="GRh-t4-rgI"/>
                             <constraint firstItem="prF-p6-rcA" firstAttribute="leading" secondItem="Emu-XC-TJZ" secondAttribute="leading" constant="10" id="HQf-4W-Qof"/>
+                            <constraint firstItem="sCd-vg-tRn" firstAttribute="leading" secondItem="Emu-XC-TJZ" secondAttribute="leading" constant="264" id="NGF-7c-Qbe"/>
                             <constraint firstItem="sCd-vg-tRn" firstAttribute="leading" secondItem="prF-p6-rcA" secondAttribute="trailing" constant="8" id="Ngx-dT-aH9"/>
                             <constraint firstItem="18E-ZY-4vF" firstAttribute="leading" secondItem="sxQ-OU-T0s" secondAttribute="trailing" constant="8" id="Nqq-wO-RSH"/>
                             <constraint firstItem="D37-sl-jnJ" firstAttribute="leading" secondItem="Emu-XC-TJZ" secondAttribute="leading" constant="10" id="W6p-x3-b3g"/>
                             <constraint firstItem="sCd-vg-tRn" firstAttribute="leading" secondItem="D37-sl-jnJ" secondAttribute="trailing" constant="8" id="WAe-XN-UbC"/>
+                            <constraint firstAttribute="bottom" secondItem="cGV-cB-mb4" secondAttribute="bottom" constant="121" id="YtI-Zo-loB"/>
+                            <constraint firstItem="xFk-c5-wUh" firstAttribute="top" secondItem="sCd-vg-tRn" secondAttribute="bottom" constant="40" id="abO-wu-V7k"/>
+                            <constraint firstItem="sCd-vg-tRn" firstAttribute="centerX" secondItem="hi0-l4-nqt" secondAttribute="centerX" id="eBH-dl-Wa9"/>
                             <constraint firstItem="D37-sl-jnJ" firstAttribute="top" secondItem="prF-p6-rcA" secondAttribute="bottom" constant="19" id="etd-Mk-aI9"/>
+                            <constraint firstItem="18E-ZY-4vF" firstAttribute="top" secondItem="xFk-c5-wUh" secondAttribute="top" id="hL6-OZ-e2D"/>
+                            <constraint firstItem="cGV-cB-mb4" firstAttribute="top" secondItem="hi0-l4-nqt" secondAttribute="top" id="mxa-yV-h6G"/>
+                            <constraint firstItem="sCd-vg-tRn" firstAttribute="bottom" secondItem="D37-sl-jnJ" secondAttribute="bottom" id="nAd-Ki-Dtl"/>
+                            <constraint firstItem="cGV-cB-mb4" firstAttribute="trailing" secondItem="D37-sl-jnJ" secondAttribute="trailing" id="qJQ-6e-vVg"/>
                             <constraint firstItem="sxQ-OU-T0s" firstAttribute="top" secondItem="xFk-c5-wUh" secondAttribute="bottom" constant="19" id="qQL-kD-n2F"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="sCd-vg-tRn" secondAttribute="trailing" constant="-27" id="qUI-Un-QXX"/>
                             <constraint firstItem="hi0-l4-nqt" firstAttribute="leading" secondItem="bOT-6z-nat" secondAttribute="trailing" constant="8" id="rDu-w3-hIj"/>
                             <constraint firstItem="hi0-l4-nqt" firstAttribute="leading" secondItem="cGV-cB-mb4" secondAttribute="trailing" constant="8" id="unk-YQ-yYt"/>
+                            <constraint firstItem="cGV-cB-mb4" firstAttribute="top" secondItem="sxQ-OU-T0s" secondAttribute="bottom" constant="35" id="wHm-tx-tbx"/>
+                            <constraint firstItem="sCd-vg-tRn" firstAttribute="centerX" secondItem="18E-ZY-4vF" secondAttribute="centerX" id="zMj-71-Ibp"/>
+                            <constraint firstItem="sCd-vg-tRn" firstAttribute="top" secondItem="Emu-XC-TJZ" secondAttribute="top" constant="73" id="zZZ-8w-98f"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Emu-XC-TJZ"/>
                     </view>
@@ -244,21 +290,25 @@ SpaceX originally intended to land Crew Dragon on land using the LES engines, wi
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="download" translatesAutoresizingMaskIntoConstraints="NO" id="elf-t5-iic">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="quote.bubble.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="elf-t5-iic">
                                 <rect key="frame" x="70" y="110" width="72" height="74"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="0.1333333333" green="0.48627450979999998" blue="0.61568627450000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="download" translatesAutoresizingMaskIntoConstraints="NO" id="xjU-gO-B7E">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="folder.fill.badge.plus" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="xjU-gO-B7E">
                                 <rect key="frame" x="70" y="271" width="72" height="74"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="0.1333333333" green="0.48627450979999998" blue="0.61568627450000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="download" translatesAutoresizingMaskIntoConstraints="NO" id="CsA-ah-tPy">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="questionmark.square.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="CsA-ah-tPy">
                                 <rect key="frame" x="70" y="411" width="72" height="74"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="0.1333333333" green="0.48627450979999998" blue="0.61568627450000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="download" translatesAutoresizingMaskIntoConstraints="NO" id="hga-xJ-puZ">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="person.3.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="hga-xJ-puZ">
                                 <rect key="frame" x="70" y="555" width="72" height="74"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="0.1333333333" green="0.48627450979999998" blue="0.61568627450000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="A Group Chat For The Class You're In!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VrQ-AI-JvC">
                                 <rect key="frame" x="170" y="555" width="200" height="74"/>
@@ -285,21 +335,21 @@ SpaceX originally intended to land Crew Dragon on land using the LES engines, wi
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="download" translatesAutoresizingMaskIntoConstraints="NO" id="RAN-Dc-xZy">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="person.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="RAN-Dc-xZy">
                                 <rect key="frame" x="58" y="251" width="72" height="74"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="1" green="0.79822754539999996" blue="0.0074770109010000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="download" translatesAutoresizingMaskIntoConstraints="NO" id="fWk-D2-VL5">
-                                <rect key="frame" x="303" y="674" width="72" height="74"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="download" translatesAutoresizingMaskIntoConstraints="NO" id="YIg-aY-2an">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="person.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="YIg-aY-2an">
                                 <rect key="frame" x="58" y="555" width="72" height="74"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="1" green="0.79822754539999996" blue="0.0074770109010000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="download" translatesAutoresizingMaskIntoConstraints="NO" id="00i-YR-cGA">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="person.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="00i-YR-cGA">
                                 <rect key="frame" x="303" y="107" width="72" height="74"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" red="0.90196078431372551" green="0.90980392156862744" blue="0.90196078431372551" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </imageView>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Start Texting Here" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="U0j-27-huh">
                                 <rect key="frame" x="54" y="694" width="193" height="34"/>
@@ -328,10 +378,6 @@ SpaceX originally intended to land Crew Dragon on land using the LES engines, wi
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="download" translatesAutoresizingMaskIntoConstraints="NO" id="cYH-1V-zfn">
-                                <rect key="frame" x="303" y="411" width="72" height="74"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Hobby Help" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cxw-fd-oFm">
                                 <rect key="frame" x="68" y="117" width="179" height="54"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -339,6 +385,18 @@ SpaceX originally intended to land Crew Dragon on land using the LES engines, wi
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="person.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="iJ4-34-djA">
+                                <rect key="frame" x="303" y="409.5" width="72" height="74"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" red="0.90196078430000004" green="0.90980392160000001" blue="0.90196078430000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="person.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="Paq-T0-VNk">
+                                <rect key="frame" x="303" y="673.5" width="72" height="74"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" red="0.90196078430000004" green="0.90980392160000001" blue="0.90196078430000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="Gw8-XB-jdH"/>
@@ -351,10 +409,21 @@ SpaceX originally intended to land Crew Dragon on land using the LES engines, wi
         </scene>
     </scenes>
     <resources>
+        <image name="cooking" width="277" height="182"/>
+        <image name="crochet" width="275" height="183"/>
         <image name="download" width="225" height="225"/>
+        <image name="embroirdery" width="225" height="225"/>
+        <image name="felting" width="251" height="201"/>
+        <image name="folder.fill.badge.plus" catalog="system" width="128" height="86"/>
         <image name="house.fill" catalog="system" width="128" height="106"/>
+        <image name="knitting" width="318" height="159"/>
+        <image name="leatherwork" width="275" height="184"/>
         <image name="pencil" catalog="system" width="128" height="113"/>
+        <image name="person.3.fill" catalog="system" width="128" height="61"/>
+        <image name="person.circle" catalog="system" width="128" height="121"/>
         <image name="person.fill" catalog="system" width="128" height="120"/>
+        <image name="questionmark.square.fill" catalog="system" width="128" height="114"/>
+        <image name="quote.bubble.fill" catalog="system" width="128" height="110"/>
         <image name="text.bubble.fill" catalog="system" width="128" height="110"/>
         <image name="tray.fill" catalog="system" width="128" height="88"/>
     </resources>
