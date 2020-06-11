@@ -7,6 +7,27 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--Tutorials-->
+        <scene sceneID="dE4-Su-abJ">
+            <objects>
+                <tabBarController title="Tutorials" id="But-pT-bmr" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Oo8-FN-RCf">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="ddx-wd-Nai" kind="relationship" relationship="viewControllers" id="S0L-wO-xtY"/>
+                        <segue destination="ric-7f-3wZ" kind="relationship" relationship="viewControllers" id="qQ2-X3-c3Q"/>
+                        <segue destination="cAd-MB-wLo" kind="relationship" relationship="viewControllers" id="yHQ-tb-x5K"/>
+                        <segue destination="8L2-bE-FnL" kind="relationship" relationship="viewControllers" id="EOE-QT-eRK"/>
+                        <segue destination="99a-m8-xfz" kind="relationship" relationship="viewControllers" id="vn1-eN-zgT"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="k4E-Cs-Orj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="75" y="115"/>
+        </scene>
         <!--scroll home page-->
         <scene sceneID="UXK-gG-ztA">
             <objects>
@@ -56,7 +77,7 @@ SpaceX originally intended to land Crew Dragon on land using the LES engines, wi
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="1UD-Bb-r0U"/>
                     </view>
-                    <navigationItem key="navigationItem" id="lPF-OY-SpD"/>
+                    <tabBarItem key="tabBarItem" title="Home" image="house.fill" catalog="system" selectedImage="house.fill" id="nGx-Jx-VJ4"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gfa-Is-zAu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -104,6 +125,7 @@ SpaceX originally intended to land Crew Dragon on land using the LES engines, wi
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="BaX-eV-A8f"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Account" image="person.fill" catalog="system" selectedImage="person.fill" id="RHg-ob-RvR"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1fg-Sc-GVc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -123,14 +145,14 @@ SpaceX originally intended to land Crew Dragon on land using the LES engines, wi
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xFk-c5-wUh">
                                 <rect key="frame" x="20" y="369" width="262" height="159"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="14" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="18E-ZY-4vF">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Crotchet" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="14" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="18E-ZY-4vF">
                                 <rect key="frame" x="290" y="369" width="104" height="212"/>
                                 <color key="backgroundColor" red="0.99215686270000003" green="0.79215686269999996" blue="0.25098039220000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="14" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hi0-l4-nqt">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Cooking" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="14" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hi0-l4-nqt">
                                 <rect key="frame" x="290" y="616" width="104" height="212"/>
                                 <color key="backgroundColor" red="0.99215686270000003" green="0.79215686269999996" blue="0.25098039220000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="21"/>
@@ -155,8 +177,16 @@ SpaceX originally intended to land Crew Dragon on land using the LES engines, wi
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="14" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sCd-vg-tRn">
-                                <rect key="frame" x="290" y="117" width="104" height="212"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Beginner" textAlignment="center" lineBreakMode="clip" numberOfLines="14" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sCd-vg-tRn">
+                                <rect key="frame" x="264" y="117" width="157" height="212"/>
+                                <color key="backgroundColor" red="0.99215686270000003" green="0.79215686269999996" blue="0.25098039220000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Knitting" textAlignment="center" lineBreakMode="clip" numberOfLines="14" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UWS-SH-53S">
+                                <rect key="frame" x="277" y="232" width="130" height="91"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.99215686270000003" green="0.79215686269999996" blue="0.25098039220000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                 <nil key="textColor"/>
@@ -179,6 +209,7 @@ SpaceX originally intended to land Crew Dragon on land using the LES engines, wi
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Emu-XC-TJZ"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Classes" image="pencil" catalog="system" selectedImage="pencil" id="d1f-hJ-NoK"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gaQ-6D-HwI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -240,6 +271,7 @@ SpaceX originally intended to land Crew Dragon on land using the LES engines, wi
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="hab-Xe-3Af"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Chat Menu" image="tray.fill" catalog="system" selectedImage="tray.fill" id="zmK-jO-9aC"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OMx-JC-yvt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -311,6 +343,7 @@ SpaceX originally intended to land Crew Dragon on land using the LES engines, wi
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="Gw8-XB-jdH"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Chat" image="text.bubble.fill" catalog="system" id="udc-9u-i47"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Mo3-zr-MjO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -319,5 +352,10 @@ SpaceX originally intended to land Crew Dragon on land using the LES engines, wi
     </scenes>
     <resources>
         <image name="download" width="225" height="225"/>
+        <image name="house.fill" catalog="system" width="128" height="106"/>
+        <image name="pencil" catalog="system" width="128" height="113"/>
+        <image name="person.fill" catalog="system" width="128" height="120"/>
+        <image name="text.bubble.fill" catalog="system" width="128" height="110"/>
+        <image name="tray.fill" catalog="system" width="128" height="88"/>
     </resources>
 </document>
