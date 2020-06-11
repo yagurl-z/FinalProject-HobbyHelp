@@ -28,7 +28,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" red="0.1333333333" green="0.48627450979999998" blue="0.61568627450000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </imageView>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" text="Help" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ciO-U5-xn7">
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" text="Help" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ciO-U5-xn7">
                                 <rect key="frame" x="32" y="303" width="222" height="82"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.99607843137254903" green="0.42745098039215684" blue="0.45098039215686275" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -42,7 +42,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="139" y="115"/>
+            <point key="canvasLocation" x="161" y="115"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="UXK-gG-ztA">
@@ -52,18 +52,52 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2Aq-G3-nJJ">
-                                <rect key="frame" x="28" y="34" width="414" height="44"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                            </navigationBar>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yCp-J5-b1m">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="eHB-5e-CJD">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="1461"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DnP-hp-I9k">
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="1461"/>
+                                                <mutableString key="text">Dragon 2 is a class of reusable spacecraft developed and manufactured by American aerospace manufacturer SpaceX as the successor to the Dragon 1 cargo spacecraft. It has two variants; Crew Dragon, a human-rated capsule capable of ferrying up to seven astronauts, and Cargo Dragon, an updated replacement for the original Dragon spacecraft. The spacecraft launches atop a Falcon 9 Block 5 rocket and returns to Earth via an ocean splashdown. Unlike its predecessor, the spacecraft can dock itself to the ISS instead of being berthed. Crew Dragon is equipped with an integrated launch escape system (LES) capable of accelerating the vehicle away from the rocket in an emergency at 11.8 m/s2, accomplished by using a set of four side-mounted thruster pods with two SuperDraco engines each. The spacecraft features redesigned solar arrays and a modified outer mold line compared to the original Dragon, and possess new flight computers and avionics. As of March 2020, four Dragon 2 spacecraft have been manufactured (not counting structural test articles that were never airborne); a test article named Dragonfly and three flightworthy vehicles, one of which was destroyed in an engine test.
+
+Crew Dragon serves as one of two spacecraft that is expected to shuttle crews to and from the International Space Station (ISS) under NASA's Commercial Crew Program, the other being the Boeing CST-100 Starliner. It is also expected to be used in flights by American space tourism company Space Adventures and to shuttle tourists to and from Axiom Space's planned space station. Crew Dragon's first non-piloted test flight occurred in March 2019, and its first crewed flight – with astronauts Robert L. Behnken and Douglas G. Hurley – occurred 30 May 2020 at 3:22PM ET. This test flight marked the first time a private company has launched a crewed orbital spacecraft. Cargo Dragon is expected to supply cargo to the ISS under a Commercial Resupply Services-2 contract with NASA, along with Northrop Grumman Innovation Systems' Cygnus spacecraft and Sierra Nevada Corporation's Dream Chaser spacecraft. The first flight of the Dragon 2 variant of Cargo Dragon is planned to launch in October 2020. There are two variants: Crew Dragon and Cargo Dragon.[5] Crew Dragon was initially called DragonRider[11][12] and it was intended from the beginning to support a crew of seven or a combination of crew and cargo.[13][14] It is able to perform fully autonomous rendezvous and docking with manual override ability using the NASA Docking System (NDS).[15][16] For typical missions, Crew Dragon will remain docked to the ISS for a period of 180 days, but is designed to remain on the station for up to 210 days, matching the Russian Soyuz spacecraft.[17][18][19] From the beginning of the development process, SpaceX planned to use an integrated pusher launch escape system for the Dragon spacecraft.[20][21][22]
+
+Crew Dragon
+SpaceX originally intended to land Crew Dragon on land using the LES engines, with parachutes and an ocean splashdown available in the case of an aborted launch. Precision water landing under parachutes was proposed to NASA as "the baseline return and recovery approach for the first few flights" of Crew Dragon.[23] Propulsive landing was later cancelled, leaving ocean splashdown under parachutes as the only option.[24] As of 2011, the Paragon Space Development Corporation was assisting in developing Crew Dragon's life support system.[25]</mutableString>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="eHB-5e-CJD" firstAttribute="leading" secondItem="rfQ-Ky-zr5" secondAttribute="leading" id="8PG-GY-mGb"/>
+                                    <constraint firstItem="eHB-5e-CJD" firstAttribute="width" secondItem="6Ld-yJ-V3f" secondAttribute="width" id="IDN-6n-3j9"/>
+                                    <constraint firstItem="eHB-5e-CJD" firstAttribute="top" secondItem="rfQ-Ky-zr5" secondAttribute="top" id="UnH-S9-ZmF"/>
+                                    <constraint firstItem="eHB-5e-CJD" firstAttribute="bottom" secondItem="rfQ-Ky-zr5" secondAttribute="bottom" id="XJ7-BI-FxB"/>
+                                    <constraint firstItem="eHB-5e-CJD" firstAttribute="trailing" secondItem="rfQ-Ky-zr5" secondAttribute="trailing" id="j4Z-co-HLQ"/>
+                                </constraints>
+                                <viewLayoutGuide key="contentLayoutGuide" id="rfQ-Ky-zr5"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="6Ld-yJ-V3f"/>
+                            </scrollView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="yCp-J5-b1m" firstAttribute="leading" secondItem="1UD-Bb-r0U" secondAttribute="leading" id="9de-Kr-0Ue"/>
+                            <constraint firstAttribute="bottom" secondItem="yCp-J5-b1m" secondAttribute="bottom" id="SVS-jk-RFH"/>
+                            <constraint firstItem="yCp-J5-b1m" firstAttribute="trailing" secondItem="1UD-Bb-r0U" secondAttribute="trailing" id="XKR-qs-lgH"/>
+                            <constraint firstItem="yCp-J5-b1m" firstAttribute="top" secondItem="3yk-Xt-tC9" secondAttribute="top" id="jEu-93-Om0"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="1UD-Bb-r0U"/>
                     </view>
+                    <navigationItem key="navigationItem" id="lPF-OY-SpD"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gfa-Is-zAu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="819" y="115"/>
+            <point key="canvasLocation" x="818.84057971014499" y="114.50892857142857"/>
         </scene>
     </scenes>
     <resources>
