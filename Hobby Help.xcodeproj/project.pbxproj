@@ -16,6 +16,11 @@
 		DB5FF036248FFCB2001E0A47 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB5FF034248FFCB2001E0A47 /* LaunchScreen.storyboard */; };
 		DB5FF041248FFCB4001E0A47 /* Hobby_HelpTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB5FF040248FFCB4001E0A47 /* Hobby_HelpTests.swift */; };
 		DB5FF04C248FFCB4001E0A47 /* Hobby_HelpUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB5FF04B248FFCB4001E0A47 /* Hobby_HelpUITests.swift */; };
+		DBBE08962493C9F800B81C50 /* HomePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBBE08922493C9F800B81C50 /* HomePageViewController.swift */; };
+		DBBE08972493C9F800B81C50 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBBE08932493C9F800B81C50 /* LoginViewController.swift */; };
+		DBBE08982493C9F800B81C50 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBBE08942493C9F800B81C50 /* SignUpViewController.swift */; };
+		DBBE08992493C9F800B81C50 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBBE08952493C9F800B81C50 /* ViewController.swift */; };
+		DBBE089B2493CA0000B81C50 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBBE089A2493C9FF00B81C50 /* Utilities.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +56,11 @@
 		DB5FF047248FFCB4001E0A47 /* Hobby HelpUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Hobby HelpUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB5FF04B248FFCB4001E0A47 /* Hobby_HelpUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hobby_HelpUITests.swift; sourceTree = "<group>"; };
 		DB5FF04D248FFCB4001E0A47 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DBBE08922493C9F800B81C50 /* HomePageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomePageViewController.swift; sourceTree = "<group>"; };
+		DBBE08932493C9F800B81C50 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		DBBE08942493C9F800B81C50 /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		DBBE08952493C9F800B81C50 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DBBE089A2493C9FF00B81C50 /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Utilities.swift; path = "../../FinalProject-HobbyHelp3/Hobby Help/Utilities.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,11 +114,13 @@
 				DB5FF026248FFCAD001E0A47 /* AppDelegate.swift */,
 				DB5FF028248FFCAD001E0A47 /* SceneDelegate.swift */,
 				DB5FF02A248FFCAD001E0A47 /* ViewController.swift */,
+				DBBE08912493C9F800B81C50 /* View Controllers */,
 				DB5FF02C248FFCAD001E0A47 /* Main.storyboard */,
 				DB5FF032248FFCB2001E0A47 /* Assets.xcassets */,
 				DB5FF034248FFCB2001E0A47 /* LaunchScreen.storyboard */,
 				DB5FF037248FFCB2001E0A47 /* Info.plist */,
 				DB5FF02F248FFCAD001E0A47 /* Hobby_Help.xcdatamodeld */,
+				DBBE089A2493C9FF00B81C50 /* Utilities.swift */,
 			);
 			path = "Hobby Help";
 			sourceTree = "<group>";
@@ -129,6 +141,18 @@
 				DB5FF04D248FFCB4001E0A47 /* Info.plist */,
 			);
 			path = "Hobby HelpUITests";
+			sourceTree = "<group>";
+		};
+		DBBE08912493C9F800B81C50 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				DBBE08922493C9F800B81C50 /* HomePageViewController.swift */,
+				DBBE08932493C9F800B81C50 /* LoginViewController.swift */,
+				DBBE08942493C9F800B81C50 /* SignUpViewController.swift */,
+				DBBE08952493C9F800B81C50 /* ViewController.swift */,
+			);
+			name = "View Controllers";
+			path = "../../FinalProject-HobbyHelp3/Hobby Help/View Controllers";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -262,9 +286,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DBBE08972493C9F800B81C50 /* LoginViewController.swift in Sources */,
+				DBBE08982493C9F800B81C50 /* SignUpViewController.swift in Sources */,
 				DB5FF02B248FFCAD001E0A47 /* ViewController.swift in Sources */,
 				DB5FF027248FFCAD001E0A47 /* AppDelegate.swift in Sources */,
 				DB5FF029248FFCAD001E0A47 /* SceneDelegate.swift in Sources */,
+				DBBE08962493C9F800B81C50 /* HomePageViewController.swift in Sources */,
+				DBBE089B2493CA0000B81C50 /* Utilities.swift in Sources */,
+				DBBE08992493C9F800B81C50 /* ViewController.swift in Sources */,
 				DB5FF031248FFCAD001E0A47 /* Hobby_Help.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
